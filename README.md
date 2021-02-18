@@ -1,2 +1,2 @@
 # flask-tutorials
-making a simple blog using flask app
+making apps with flask app
