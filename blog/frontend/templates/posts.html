@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+ <div class = "container">
+   <div class = "row">
+     <div class = "col" >
+      <div class = "card mt-4">
+       <div class = "card-body">
+        {% for post in data %}
+          <div class = "card mt-3">
+            <div name = "{{post[0]}}" hidden = true> {{post[0]}} </div-->
+            <div class = "card-header">
+             <strong>{{post[1]}}</strong>
+            </div>
+            
+            <div class = "card-body">
+              {{post[2]}}
+            </div>
+           </div>
+         {% endfor %}       
+       </div>
+      </div>
+     </div>
+    </div>
+ </div>
+{% endblock %}
